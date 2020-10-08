@@ -2,7 +2,7 @@
 
 
     <div *ngFor="let cancion of nuevasCanciones" class="card">
-        <img [src]="cancion.images[0].url" class="card-img-top" alt="Carp image cap">
+        <img [src]="cancion.images | noimage" class="card-img-top" alt="Carp image cap">
         <div class="card-body">
             <h5 class="card-title">{{ cancion.name }}</h5>
             <p class="card-text">
